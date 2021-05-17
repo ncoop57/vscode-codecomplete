@@ -1,0 +1,6 @@
+{
+    "name": "codecomplete-lsp-client",
+    "dependencies": {
+        "vscode-languageclient": "^7.0.0"
+    }
+}
