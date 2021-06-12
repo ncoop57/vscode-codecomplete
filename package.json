@@ -13,7 +13,21 @@
     "onLanguage:python"
   ],
   "main": "./client/extension.js",
-  "contributes": {},
+  "contributes": {
+    "configuration": [
+      {
+        "title": "Code Complete Configuration",
+        "properties": {
+          "complete.resource.api_key": {
+            "type": "string",
+            "default": "<API_KEY>",
+            "description": "HuggingFace API Key for authenticating model inference call.",
+            "scope": "resource"
+          }
+        }
+      }
+    ]
+  },
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -b",
